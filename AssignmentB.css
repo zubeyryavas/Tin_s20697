@@ -1,0 +1,32 @@
+p{
+	font-style: oblique;
+	font-size: 22px;
+
+}
+header{
+	text-decoration: underline;
+	font-style: normal;
+	font-size: 25px;
+	color: #32CD32;
+	text-align: center;
+}
+table{
+	border-style: dotted;
+	border-color: blue;
+
+}
+a:link {
+  text-decoration: none;
+}
+ol{
+
+}
+ol li{
+	padding: 5px;
+}
+
+ul li {
+   list-style-type: '>';
+   padding: 3px;
+
+}

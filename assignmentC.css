@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+.column{
+
+  /*border: 3px solid #73AD21;*/
+  padding:70px;
+  width: 50%;
+  float: left;
+  height: 300px;
+  
+}
+
+.img2 {
+    float: right;
+    margin-right: 15px;
+    clear: left;
+
+}
+.img1 {
+  float: left;
+  margin-left: 15px;
+  clear: right;
+}
+
+/*.clearfix {
+  overflow: auto;
+}*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
