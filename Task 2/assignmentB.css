@@ -1,0 +1,34 @@
+input[type=text],input[type=password],textarea,select{
+  
+  font-size: 40px;
+  padding: 24px 40px;
+  border-radius: 20px;
+  background-color: white;
+  font-style: normal;
+  text-align: center;
+}
+body{
+	background-color: #ADD8E6;
+}
+label, p{
+  font-size: 40px;
+  font-style: normal;
+}
+ input[required]{
+   background-color: white;  }
+
+button{
+	  background-color: Gray;
+	  width: 50%;
+	  color: black;
+	  padding: 28px 40px;
+	  margin: 16px 0;
+	  border: ridge;
+	  border-radius: 10px;
+	  cursor: pointer;
+	  font-size: 20px
+}
+button:hover{
+	background-color: green;
+
+}
