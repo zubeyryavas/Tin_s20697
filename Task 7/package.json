@@ -1,0 +1,11 @@
+{
+  "name": "07_nodejs",
+  "version": "1.0.0",
+  "description": "assignment 7",
+  "main": "7a.js",
+  "scripts": {
+    "start": "nodemon 7a.js"
+  },
+  "author": "s19358",
+  "license": "ISC"
+}
