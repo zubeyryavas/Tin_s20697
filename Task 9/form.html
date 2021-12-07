@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/public/css/style.css">
+        <title>Assignment 8</title>
+    </head>
+<body>
+<div class="container">
+<h2>Calculator</h2>
+
+<form method="POST" >
+  <label for="number1">First number:</label><br>
+  <input type="number" id="number1" name="number1"><br>
+  <label for="number2">Second number:</label><br>
+  <input type="number" id="number2" name="number2"><br>
+<div id ="radiobuttons">
+  <input type="radio" id="add"name="calc" value="add" onclick="calculate(this.value)"> Add<br>
+  <input type="radio" name="calc" value="subtract" onclick="calculate(this.value)"> Subtract<br>
+  <input type="radio" name="calc" value="divide" onclick="calculate(this.value)"> Divide<br>
+  <input type="radio" name="calc" value="multiply" onclick="calculate(this.value)"> Multiply
+</div>
+  <br>
+  <label for="result">Result :</label><br>
+  <input id="result" type="text" name="result" readonly>
+</form> 
+</div>
+
+<script src="b.js"></script>
+</body>
+</html>
