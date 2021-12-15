@@ -1,0 +1,40 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 50px;
+    
+   
+}
+* {
+    box-sizing: border-box;
+  }
+  form {  
+    display: inline-block;
+    width: 400px;
+    background-color: rgb(165, 214, 230);
+    margin: 20px;
+    border-radius: 20px;
+    border-style: outset;
+    border-color: cornflowerblue;
+
+}
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    
+   
+  }
+  
+  /* Clear floats after the columns */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
