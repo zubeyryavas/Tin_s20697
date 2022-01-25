@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCORES</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        button {
+            border-radius: 12px;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            background-color: white; 
+            color: black; 
+            border: 2px solid #ffa135;
+            
+        }
+        button:hover {
+             background-color:  #ffa135;
+             color: white;
+        }
+        th,td ,button {
+            font-family: 'Yusei Magic', sans-serif;
+        }
+        #scores{
+        padding: 50px;
+    }
+        </style>
+                   
+</head>
+<body>
+<div id="scores">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b940af23495939.5632402c837bd.png" width="425px" height="175px">
+    <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>       
+          </tr>
+        </thead>
+        <tbody>
+          <% var i=1  %>
+          <%if (records.length >0){ %>
+          <% records.forEach(function(row){ %>
+          
+          <tr>
+            <td><%= i++ %></td>
+            <td><%= row.name %></td>
+            <td><%= row.score %></td>
+          </tr>
+          
+          <% })}else{ %>
+            <tr>
+                <td colspan="6">No Record Found</td>
+                
+              </tr>
+            <% } %>
+           
+        </tbody>
+      </table>
+      <button onclick="Back()">Back</button>
+</div>
+    <script>
+        function Back() {
+          window.history.back();
+        }
+        </script>
+    
+</body>
+</html>

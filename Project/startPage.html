@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <style>
+    body{
+        text-align: center;
+    }
+    .button {
+        border-radius: 12px;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white; 
+        color: black; 
+        border: 2px solid #ffa135;
+        
+    }
+    .button:hover {
+         background-color:  #ffa135;
+         color: white;
+}
+    label, a , button {
+        font-family: 'Yusei Magic', sans-serif;
+    }
+    #startGame{
+        padding: 50px;
+    }
+    #name{
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div id="startGame">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b940af23495939.5632402c837bd.png" width="425px" height="175px">
+        <form action="/game">
+            <label for="name"><b>Enter your name:</b></label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <button class="button">START GAME</button>
+          </form>
+          <a href="/highscores">Click to see high scores</a>
+    </div>
+
+    
+    
+</body>
+</html>
